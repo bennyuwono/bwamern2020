@@ -75,7 +75,7 @@ Button.propTypes = {
   onclick: propTypes.func,
   href: propTypes.string,
   target: propTypes.string,
-  className: propTypes.bool,
+  className: propTypes.string,
   isDisabled: propTypes.bool,
   isLoadling: propTypes.bool,
   isSmall: propTypes.bool,

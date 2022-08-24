@@ -43,10 +43,19 @@
 @import "utilities";
 @import "print";
 
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
 .brand-text-icon {
   font-size: 26px;
   font-weight: 500;
   font-family: "Poppins", sans-serif;
+  text-decoration: none;
   &.hover {
     color: $primary;
     text-decoration: none;
@@ -75,7 +84,7 @@ header {
             padding-left: 1rem;
             padding-right: 1rem;
             &:hover {
-              text-decoration: underline;
+              text-decoration: none;
             }
           }
         }

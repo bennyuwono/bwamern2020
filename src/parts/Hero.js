@@ -13,7 +13,7 @@ import formatNumber from "utils/formatNumber";
 export default function Hero(props) {
   function showMostPicked() {
     window.scrollTo({
-      top: (props.refMostPicked.current.offsetTop = 30),
+      top: props.refMostPicked.current.offsetTop - 30,
       behavior: "smooth",
     });
   }
@@ -37,7 +37,7 @@ export default function Hero(props) {
             className="btn px-5"
             hasShadow
             isPrimary
-            onclick={showMostPicked}
+            onClick={showMostPicked}
           >
             Show Me Now
           </Button>

@@ -18,7 +18,6 @@ export default function Button(props) {
 
   if (props.isDisabled || props.isLoading) {
     if (props.isDisabled) className.push("disabled");
-
     return (
       <span className={className.join(" ")} style={props.style}>
         {props.isLoading ? (
@@ -78,11 +77,12 @@ Button.propTypes = {
   target: propTypes.string,
   className: propTypes.string,
   isPrimary: propTypes.bool,
+  isLight: propTypes.bool,
+  isExternal: propTypes.bool,
   isDisabled: propTypes.bool,
   isLoading: propTypes.bool,
   isSmall: propTypes.bool,
   isLarge: propTypes.bool,
   isBlock: propTypes.bool,
-  isExternal: propTypes.bool,
   hasShadow: propTypes.bool,
 };

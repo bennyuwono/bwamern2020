@@ -4,7 +4,7 @@ import BrandIcon from "parts/IconText";
 import { useLocation } from "react-router-dom";
 
 export default function Header(props) {
-  const location = useLocation()
+  const location = useLocation();
   const getNavLinkClass = (path) => {
     return location.pathname === path ? "active" : "";
   };

@@ -6,6 +6,7 @@ import "./index.scss";
 
 export default function Star({ className, value, height, width, spacing }) {
   const decimals = Number(value) % 1;
+
   const star = [];
   let leftPos = 0;
   for (let index = 0; index < 5 && index < value - decimals; index++) {

@@ -109,6 +109,17 @@ section {
   width: 100%;
 }
 
+.container-grid {
+  .item {
+    div {
+      height: 100%;
+    }
+  }
+  .tag {
+    max-height: 30px;
+  }
+}
+
 .card {
   &.bordered {
     border: 1px solid $gray-200;

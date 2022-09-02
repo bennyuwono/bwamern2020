@@ -1,12 +1,14 @@
 /* eslint-disable no-useless-constructor */
 import React, { Component } from "react";
+
+import landingPage from "json/landingPage.json";
+
 import Header from "parts/Header";
 import Hero from "parts/Hero";
 import MostPicked from "parts/MostPicked";
 import Categories from "parts/Categories";
 import Testimony from "parts/Testimony";
 import Footer from "parts/Footer";
-import landingPage from "json/landingPage.json";
 
 export default class LandingPage extends Component {
   constructor(props) {

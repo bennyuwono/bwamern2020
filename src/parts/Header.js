@@ -1,8 +1,9 @@
 import React from "react";
 import { Fade } from "react-awesome-reveal";
+import { useLocation } from "react-router-dom";
+
 import Button from "elements/Button";
 import BrandIcon from "parts/IconText";
-import { useLocation } from "react-router-dom";
 
 export default function Header(props) {
   const location = useLocation();
